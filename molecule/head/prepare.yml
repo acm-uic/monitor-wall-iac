@@ -1,0 +1,13 @@
+---
+# Prepare.yml for the Head node
+- name: Prepare Head Node Environment
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Ensure we have the latest packages
+      ansible.builtin.apt:
+        update_cache: true
+    - name: Install default packages
+      ansible.builtin.apt:
+        name: ['systemd', 'systemd-cron', 'python3', 'python3-pip', 'sudo', 'bash', 'vim', 'ca-certificates']
+        state: present

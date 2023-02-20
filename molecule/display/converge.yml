@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include acm_uic.service_accounts"
+      include_role:
+        name: "acm_uic.service_accounts"
