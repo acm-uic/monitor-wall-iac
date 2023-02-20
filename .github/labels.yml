@@ -63,7 +63,7 @@
   color: "ffffff"
   description: "This will not be worked on"
 - # Head node
-  name: ":1st_place_medal: head"
+  name: ":1st_place_medal: Head"
   color: "d2cf77"
   description: "An issue related to work on the Head node of the monitor wall"
 - # Display node
