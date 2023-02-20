@@ -72,5 +72,5 @@
   description: "An issue related to work on the Display node of the monitor wall"
 - # Molecule
   name: ":atom: Molecule"
-  color: "9ae2bc"
+  color: "104f33"
   description: "An issue related to work the Molecule testing framework for Ansible"
