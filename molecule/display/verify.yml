@@ -8,3 +8,10 @@
   - name: Example assertion
     ansible.builtin.assert:
       that: true
+  - name: Test - Ensure package is installed
+    ansible.builtin.shell: dpkg -l node
+    register: ughh
+  - name: Assert Node is here
+    ansible.builtin.assert:
+      that: ughh.rc is 0
+
